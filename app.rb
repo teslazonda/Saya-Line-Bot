@@ -27,6 +27,9 @@ def bot_answer_to(message, user_name)
   elsif message.downcase.include?('weather in')
     # call weather API in weather_api.rb
     fetch_weather(message)
+  elsif message.downcase.include?('cat')
+    # call fetch_cat_pic API in cat_api.rb
+    fetch_cat_pic()
   elsif message.downcase.include?('eat')
     ['sushi', 'tacos', 'curry', 'pad thai', 'kebab', 'spaghetti', 'burger'].sample
   elsif message.downcase.include?('quill')
