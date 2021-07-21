@@ -34,9 +34,9 @@ def bot_answer_to(message, user_name)
   elsif message.downcase.include?('events')
     # call events API in tokyo_events.rb
     fetch_tokyo_events
-  elsif message.downcase.include?('Saya')
+  elsif message.downcase.include?('saya')
     '私だよん！ヒャロウー'
-  elsif message.downcase.include?('Bobo')
+  elsif message.downcase.include?('bobo')
     'BOBO ちゃん！可愛いね！'
   elsif message.match?(/([\p{Hiragana}\p{Katakana}\p{Han}]+)/)
     # respond in japanese!
