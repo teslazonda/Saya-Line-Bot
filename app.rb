@@ -29,6 +29,8 @@ def bot_answer_to(message, user_name)
     fetch_weather(message)
   elsif message.downcase.include?('eat')
     ['sushi', 'tacos', 'curry', 'pad thai', 'kebab', 'spaghetti', 'burger'].sample
+  elsif message.downcase.include?('quill')
+    'I love that guy! 私の好きピ'
   elsif message.downcase.include?('events')
     # call events API in tokyo_events.rb
     fetch_tokyo_events
