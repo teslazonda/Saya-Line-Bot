@@ -7,7 +7,7 @@ Based on a Le Wagon Tokyo workshop given by yannklein(https://github.com/yannkle
 [日本語ドキュメント](README.ja.md)
 
 ## Add my LINE bot as a friend:
-![L](https://github.com/teslazonda/Saya-Line-Bot/blob/main/L.png?raw=true
+![alt text](https://github.com/teslazonda/Saya-Line-Bot/blob/main/L.png?raw=true
 
 ## What we use
 - [LINE Messaging API](https://developers.line.me/en/docs/messaging-api/)
