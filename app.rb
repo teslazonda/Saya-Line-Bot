@@ -29,7 +29,7 @@ def bot_answer_to(message, user_name)
     # call weather API in weather_api.rb
     fetch_weather(message)
   elsif message.downcase.include?('cat')
-    # call fetch_cat_pic API in cat_api.rb
+    # call fetch_cat_pic API in cat_api.rb THIS STILL NEEDS WORK. It looks like the message type must change when calling this method
     fetch_cat_pic()
   elsif message.downcase.include?('eat')
     ['sushi', 'tacos', 'curry', 'pad thai', 'kebab', 'spaghetti', 'burger'].sample
@@ -58,8 +58,6 @@ def bot_jp_answer_to(message, user_name)
     "こんにちは#{user_name}さん！お元気ですか?"
   elsif message.match?(/.*元気.*(？|\?｜か)/)
     "私は元気です、#{user_name}さん"
-  elsif message.match?(/.*(le wagon|ワゴン|バゴン).*/i)
-    "#{user_name}さん... もしかして京都のLE WAGONプログラミング学校の話ですかね？ 素敵な画っこと思います！"
   elsif message.end_with?('?','？')
     "いい質問ですね、#{user_name}さん！"
   else
