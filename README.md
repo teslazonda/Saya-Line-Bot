@@ -1,11 +1,13 @@
-Built on the shoulder of giants, especially https://github.com/hidehiro98/
+Built on the shoulders of giants, especially https://github.com/hidehiro98/
+
+Based on a Le Wagon Tokyo workshop given by yannklein(https://github.com/yannklein/)
 
 # LINE Bot 101
 
 [日本語ドキュメント](README.ja.md)
 
-## Line Bot example (scan the QR code with your Line app)
-![qr code](https://github.com/YannKlein/bob-the-bot/blob/master/images/qrcode.png?raw=true)
+## Add my LINE bot as a friend:
+![L](/images/L.png)
 
 ## What we use
 - [LINE Messaging API](https://developers.line.me/en/docs/messaging-api/)
