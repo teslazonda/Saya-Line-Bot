@@ -78,6 +78,19 @@ def send_bot_message(message, client, event)
   'OK'
 end
 
+def send_bot_message_cat_image(client, event)
+#   # Log prints for debugging
+  cat_pic_url = fetch_cat_pic
+  p 'Bot message sent!'
+  p event['replyToken']
+  p client
+
+  message = { type: 'image', originalContentUrl:  cat_pic_url, previewImageUrl: cat_pic_url }
+  p message
+
+  client.reply_message(event['replyToken'], message)
+  'OK'
+end
 post '/callback' do
   body = request.body.read
 
@@ -120,7 +133,10 @@ post '/callback' do
           client,
           event
         )
-        # send_bot_message_cat_image()
+        send_bot_message_cat_image(
+          client,
+          event
+        )
       else
         # The answer mechanism is here!
         send_bot_message(
