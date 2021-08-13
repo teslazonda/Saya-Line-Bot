@@ -2,7 +2,7 @@ Built on the shoulders of giants, especially https://github.com/hidehiro98/
 
 Based on a Le Wagon Tokyo workshop given by yannklein(https://github.com/yannklein/)
 
-# LINE Bot 101
+# Saya Bot
 
 [日本語ドキュメント](README.ja.md)
 
