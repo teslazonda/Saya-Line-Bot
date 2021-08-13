@@ -79,7 +79,7 @@ def send_bot_message(message, client, event)
 end
 
 def send_bot_message_cat_image(client, event)
-#   # Log prints for debugging
+  # Log prints for debugging
   cat_pic_url = fetch_cat_pic()
   p cat_pic_url
   p 'cat message sent!'
