@@ -81,7 +81,7 @@ end
 def send_bot_message_cat_image(client, event)
 #   # Log prints for debugging
   cat_pic_url = fetch_cat_pic
-  p 'Bot message sent!'
+  p 'cat message sent!'
   p event['replyToken']
   p client
 
