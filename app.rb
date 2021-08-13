@@ -135,6 +135,11 @@ post '/callback' do
           client,
           event
         )
+        send_bot_message(
+          'Here\'s a kitty for you! | 猫の写真を送るね！',
+          client,
+          event
+        )
       else
         # The answer mechanism is here!
         send_bot_message(
