@@ -131,11 +131,6 @@ post '/callback' do
           event
         )
       elsif event.message['text'].downcase == 'cat please'
-        send_bot_message(
-          'Here\'s a kitty for you! | 猫の写真を送るね！',
-          client,
-          event
-        )
         send_bot_message_cat_image(
           client,
           event
