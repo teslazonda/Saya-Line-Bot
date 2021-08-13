@@ -40,6 +40,8 @@ def bot_answer_to(message, user_name)
     fetch_tokyo_events
   elsif message.downcase.include?('saya')
     '私だよん！ヒャロウー'
+  elsif message.downcase.include?('help')
+    "These are the commands you can use: \n hello \n weather in (city) \n eat \n events \n saya \n help \n cat please"
   elsif message.downcase.include?('bobo')
     'BOBO ちゃん！可愛いね！'
   elsif message.match?(/([\p{Hiragana}\p{Katakana}\p{Han}]+)/)
