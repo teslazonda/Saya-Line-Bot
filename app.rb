@@ -41,7 +41,7 @@ def bot_answer_to(message, user_name)
   elsif message.downcase.include?('saya')
     '私だよん！ヒャロウー'
   elsif message.downcase.include?('help')
-    "These are the commands you can use: \n hello \n weather in (city) \n eat \n events \n saya \n help \n cat please"
+    "These are the commands you can use: \n \n hello \n weather in (city name) \n eat \n events **displays events in Tokyo** \n saya \n help \n cat please"
   elsif message.downcase.include?('bobo')
     'BOBO ちゃん！可愛いね！'
   elsif message.match?(/([\p{Hiragana}\p{Katakana}\p{Han}]+)/)
@@ -131,11 +131,11 @@ post '/callback' do
           event
         )
       elsif event.message['text'].downcase == 'cat please'
-        # send_bot_message(
-        #   'Here\'s a kitty for you! | 猫の写真を送るね！',
-        #   client,
-        #   event
-        # )
+        send_bot_message(
+          'Here\'s a kitty for you! | 猫の写真を送るね！',
+          client,
+          event
+        )
         send_bot_message_cat_image(
           client,
           event
