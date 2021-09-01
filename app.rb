@@ -130,7 +130,7 @@ post '/callback' do
           client,
           event
         )
-      elsif event.message['text'].downcase == 'cat please'
+      elsif event.message['text'].downcase.include?('cat please')
         send_bot_message_cat_image(
           client,
           event
