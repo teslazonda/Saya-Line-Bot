@@ -88,7 +88,7 @@ def send_bot_message_cat_image(client, event)
   p event['replyToken']
   p client
 
-  message = { type: 'image', originalContentUrl:  cat_pic_url, previewImageUrl: cat_pic_url }
+  message = { type: 'image', originalContentUrl: cat_pic_url, previewImageUrl: cat_pic_url }
   p message
 
   client.reply_message(event['replyToken'], message)
